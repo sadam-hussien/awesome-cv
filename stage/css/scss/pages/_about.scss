@@ -1,0 +1,41 @@
+.about {
+
+    // start about_content
+    .about_content {
+
+        // start about_img
+        .about_img {
+            max-width: 400px;
+            @media (max-width: 767px) {
+                margin-bottom: $medium_distance;
+            }
+        }
+        // end about_img
+
+        // start about_info
+        .about_info {
+            // start about_infor_inner
+            .about_infor_inner {
+
+                // start my_name
+                .my_name {
+                    color: $white;
+                    margin-bottom: $medium_distance;
+                }
+                // end my_name
+
+                // start small_desc
+                .small_desc {
+                    margin-bottom: $medium_distance;
+                }
+                // end small_desc
+
+            }
+            // end about_infor_inner
+        }
+        // end about_info
+
+    }
+    // end about_content
+
+}

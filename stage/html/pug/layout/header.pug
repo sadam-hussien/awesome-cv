@@ -1,0 +1,50 @@
+// start toggle_header
+.toggle_header.d-block.d-lg-none
+    button.d-flex.flex-column
+        span.d-block.one
+        span.d-block.two
+        span.d-block.three
+// end toggle_header
+
+header.position-fixed.fixed-bottom.head_font
+
+    // start header_inner
+    .header_inner
+
+        // start head_area
+        .head_area
+            h4.font-weight-bold.m-0.text mahmoud hussien
+        // end head_area
+
+        // start body_area
+        .body_area
+            nav.menu
+                ul.list-unstyled.m-0.p-0
+                    li.active(data-link="main_info")
+                        span.icon <i class="fas fa-info"></i>
+                        span.text personal info
+                    li(data-link="about")
+                        span.icon <i class="fas fa-user-graduate"></i>
+                        span.text about
+                    li(data-link="services")
+                        span.icon <i class="fas fa-clock"></i>
+                        span.text services
+                    li(data-link="skills")
+                        span.icon <i class="fas fa-tasks"></i>
+                        span.text skills
+                    li(data-link="works")
+                        span.icon <i class="fas fa-briefcase"></i>
+                        span.text works
+                    li(data-link="contact")
+                        span.icon <i class="fas fa-phone-volume"></i>
+                        span.text contact
+                    
+        // end body_area
+
+        // start footer_area
+        .footer_area
+            include ../components/global/social
+        // end footer_area
+
+    // end header_inner
+

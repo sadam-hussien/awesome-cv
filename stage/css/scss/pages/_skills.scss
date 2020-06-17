@@ -1,0 +1,84 @@
+.skills {
+    
+    // shows
+    .show1 {
+        @include antica();
+    }
+    // end shows
+
+    // start skills_content
+    .skills_content {
+
+        // start skills_box
+        .skills_box {
+            margin-bottom: $large_distance;
+        }
+        // end skills_box
+
+        // start skills_defination
+        .skills_defination {
+            margin-bottom: $large_distance;
+            text-align: center;
+            color: $white;
+            .text {
+                position: relative;
+                display: inline-block;
+                padding-bottom: $small_distance;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background-image: linear-gradient(to right, transparent, $subblue, transparent);
+                    transform: scaleX(1.4);
+                }
+            }
+        }
+        // end skills_defination
+
+        // start single_skill
+        .single_skill {
+            margin-bottom: $medium_distance;
+            // start single_skill_inner
+            .single_skill_inner {
+                
+                // start prog
+                .prog {
+                    .chart {
+                        position: relative;
+                        span {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: $white;
+                            font-size: $medium_font;
+                        }
+                    }
+                }
+                // end prog
+
+                // start skill_title
+                .skill_title {
+                    color: $white;
+                    font-size: $medium_font;
+                    margin: $small_distance 0;
+                    font-family: $head_font;
+                    span {
+
+                    }
+                }
+                // end skill_title
+
+            }
+            // end single_skill_inner
+
+        }
+        // end single_skill
+
+    }
+    // end skills_content   
+    
+}   

@@ -1,0 +1,90 @@
+.contact {
+    // min-height: 100vh;
+    .show1, .show2 {
+        @include antica();
+    }
+
+    // start contact_info
+    .contact_info {
+        margin-top: $large_distance;
+        ul {
+            border-left: 1px solid $blue;
+            padding-left: $medium_distance !important;
+
+            li.single_info {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 15.5px;
+                    left: -$medium_distance - 7.5px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: $white;
+                    border: 2px solid $blue;
+                }
+                i {
+                    width: 40px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: left;
+                    color: $blue;
+                    font-size: $large_font;
+                }
+                color: $white;
+                text-transform: capitalize;
+                font-size: $medium_distance;
+                font-family: $head_font;
+                .answer {
+                    // color: $blue;
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                    @include transition(.5s);
+                    color: transparent;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        background-color: $white;
+                        @include transition(.5s);
+                    }
+                }
+                &:hover {
+                    .answer{
+                        transition-delay: .2s;
+                        color: $blue;
+                        &::after {
+                            animation: revel .5s;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    // end contact_info
+}
+
+@keyframes revel {
+    0% {
+        width: 0;
+        left: 0;
+
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    51% {
+        
+    }
+    100% {
+        width: 100%;
+        left: 100%;
+    }
+}

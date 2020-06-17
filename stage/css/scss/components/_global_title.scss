@@ -1,0 +1,35 @@
+.global_title {
+    position: relative;
+    margin-bottom: $large_distance;
+    .title_text {
+        padding-bottom: $medium_distance;
+        color: $subblue;
+        text-transform: capitalize;
+        position: relative;
+        &::before {
+            content: attr(data-text);
+            text-transform: capitalize;
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba($white, .01);
+            font-size: 250%;
+            white-space: nowrap;
+            z-index: -1;
+            -webkit-text-stroke: rgba($white, .04) 1px;
+        }
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 30px;
+        //     width: 13px;
+        //     height: 13px;
+        //     transform: translateY(calc(50% - 1.5px));
+        //     border-radius: 50%;
+        //     background: $blue;
+        // }
+    }
+}
+            

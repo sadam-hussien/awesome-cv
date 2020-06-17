@@ -1,0 +1,38 @@
+- var sec_title = "services";
+
+- var services = [{"preview": "fas fa-user", "s_title": "responses", "s_desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"},{"class_active": "active", "preview": "fas fa-comments","s_title": "chat", "s_desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"},{"preview": "fas fa-clock","s_title": "automate", "s_desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"},]
+
+section.services.padding_sec.position-relative(id="services")
+    .container-fluid
+
+        // title
+        include ../components/global/title
+
+        // start about_content
+        block services_content
+            .services_content
+                // start services_content_inner
+                .services_content_inner 
+                    .row
+                        // start single_service
+                        each service in services
+                            .col-sm-6.col-md-4
+                                .single_service(class=service.class_active)
+                                    .card
+                                        span.effect.position-absolute
+                                        span.effect.position-absolute
+                                        span.effect.position-absolute
+                                        span.effect.position-absolute
+                                        // card header
+                                        .card-header.p-0.border-0
+                                            .icon
+                                                i(class=service.preview)
+                                    
+                                        // card body
+                                        .card-body.p-0.border-0.text-center.global_p
+                                            p.card-text=service.s_desc
+                                            h5.card-title=service.s_title
+                        // end single_service
+
+                // end services_content_inner
+        // end services_content

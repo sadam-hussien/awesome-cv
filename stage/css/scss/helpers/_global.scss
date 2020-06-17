@@ -1,0 +1,41 @@
+body {
+    background: $dark;
+    font-family: $global_font;
+    overflow-x: hidden;
+}
+
+.head_font {
+    font-family: $head_font;
+}
+
+.padding_sec {
+    padding-top: $padding_sec;
+    padding-bottom: $padding_sec;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+.profile_content {
+    min-height: 100vh;
+    width: calc(100% - (#{$header_width} + #{$large_distance}));
+    float: right;
+    @include transition(.5s);
+    @media (max-width: 991px) {
+        width: 100% !important;
+    }
+    &.no_content {
+        transform: translateX(calc(#{$header_width} + #{$large_distance}));
+    }
+}
+
+.global_p {
+    line-height: 1.7;
+    color: $gray;
+    margin-bottom: $medium_distance;
+}

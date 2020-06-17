@@ -1,0 +1,42 @@
+- var sec_title = "contact me";
+
+section.contact.position-relative.padding_sec(id="contact")
+
+    img.show1.position-absolute(src="imgs/show.svg", alt="show")
+    img.show2.position-absolute(src="imgs/show.svg", alt="show 2")
+        
+
+    .container
+        
+        // start title 
+        include ../components/global/title
+        // end title
+
+        // start contact_content
+        .contact_content
+            .row
+                .col
+                    .contact_social 
+                        include ../components/global/social
+
+            .row
+                .col-md-6.d-flex.align-items-center
+                    .contact_info
+                        ul.list-unstyled.m-0.p-0
+                            li.single_info
+                                .questino <i class="fas fa-map-marker-alt"></i> address
+                                .answer egypt-elminya
+                                
+                            li.single_info
+                                .questino <i class="fas fa-envelope"></i> email
+                                .answer m.hus.dev@gmail.com
+
+                            li.single_info
+                                .questino <i class="fas fa-phone"></i> phone
+                                .answer 011-592-58110
+                
+                .col-md-6.d-none.d-md-block
+                    .contact_img
+                        img(src="imgs/my_img.png", alt="my img 2", class="img-fluid")
+
+        // end contact_content

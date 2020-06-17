@@ -1,0 +1,16 @@
+section.main_info.padding_sec.position-relative(id="main_info")
+    .container-fluid
+        // start main_info_content
+        .main_info_content
+            
+            // start img_area
+            block img_area
+                include ../components/main_info/img_area
+            // end img_area
+
+            // start some_info_area
+            block details_area
+                include ../components/main_info/details_area
+            // end details_area
+
+        // end main_info_content

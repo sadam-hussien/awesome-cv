@@ -1,0 +1,10 @@
+@mixin transition($sec) {
+    transition: all $sec;
+}
+
+@mixin antica {
+    top: 50%;
+    right: -20%;
+    opacity: .05;
+    transform: translateY(-50%);
+}

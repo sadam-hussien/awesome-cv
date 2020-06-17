@@ -1,0 +1,128 @@
+.toggle_header {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 99;
+    button {
+        background: transparent;
+        border: none;
+        padding: 5px;
+        span {
+            background-color: $white;
+            height: 2px;
+            @include transition(.5s);
+            &:not(:last-of-type) {
+                margin-bottom: 5px;
+            }
+            &.one {
+                width: 30px;
+            }
+            &.two {
+                width: 18px;
+                align-self: center;
+            }
+            &.three {
+                width: 18px;
+                align-self: flex-end;
+            }
+        }
+        
+        &.active {
+            span {
+                width: 30px;
+            }
+        }
+    }
+}
+
+header {
+    top: $padding_sec;
+    left: 15px !important;
+    background: $white;
+    width: $header_width;
+    padding: $medium_distance;
+    border-radius: 10px 10px 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    @include transition(.5s);
+
+    // start header_inner
+    .header_inner {
+
+        // start head_area
+        .head_area {
+            position: relative;
+            padding-bottom: $medium_distance;
+            margin-bottom: $large_distance;
+            .text {
+                color: $blue;
+                text-transform: capitalize;
+                position: relative;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 30px;
+                height: 3px;
+                background: $blue;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 30px;
+                width: 13px;
+                height: 13px;
+                transform: translateY(calc(50% - 1.5px));
+                border-radius: 50%;
+                background: $blue;
+            }
+        }
+        // end head_area
+
+        // start body_area
+        .body_area {
+            margin-bottom: $large_distance;
+            nav {
+                ul {
+                    li {
+                        &:not(:last-of-type) {
+                            margin-bottom: $medium_distance;
+                        }
+                        color: $gray;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        @include transition(.5s);
+                        .icon {
+                            margin-right: $small_distance;
+                            width: 40px;
+                            text-align: left;
+                            display: inline-block;
+                        }
+                        &:hover, &.active {
+                            padding-left: $medium_distance;
+                            padding-top: 6px;
+                            padding-bottom: 6px;
+                            background: $blue;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        // end body_area
+
+
+    }
+    // end header_inner
+
+    @media (max-width: 991px) {
+        left: -100% !important;
+        &.active {
+            left: 15px !important;
+        }
+    }
+
+}

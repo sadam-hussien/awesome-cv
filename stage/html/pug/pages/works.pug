@@ -1,0 +1,38 @@
+- var sec_title = "works";
+
+- var works = [{"w_class": "mix one_page recent one", "w_img": "imgs/works/dashboard.png", "w_title": "modern dashboard", "w_link": "http://modern-dashboard.surge.sh/"}, {"w_class": "mix one_page recent two", "w_img": "imgs/works/falcon.png", "w_title": "falcon", "w_link": "http://falcon-onepage.surge.sh/"}, {"w_class": "mix multi_page three", "w_img": "imgs/works/water.png", "w_title": "water delivery", "w_link": "http://water-delivery.surge.sh/"}, {"w_class": "mix one_page four", "w_img": "imgs/works/play.png", "w_title": "play tool", "w_link": "http://play-tool.surge.sh/"}, {"w_class": "mix multi_page five", "w_img": "imgs/works/labs.png", "w_title": "labs", "w_link": "https://labs-labs.netlify.com/"}, {"w_class": "mix multi_page six", "w_img": "imgs/works/bitfumes.png", "w_title": "bitfumes", "w_link": "https://bitfumes.netlify.com/"}, {"w_class": "mix one_page seven", "w_img": "imgs/works/startup.png", "w_title": "e-startup", "w_link": "https://e-startup.netlify.com/"}, {"w_class": "mix one_page eight", "w_img": "imgs/works/berserk.png", "w_title": "berserk", "w_link": "https://berserk.netlify.com/"}, {"w_class": "mix one_page nine", "w_img": "imgs/works/flylo.png", "w_title": "flylo", "w_link": "https://fylo-m.netlify.com/"},]
+
+section.works.position-relative.padding_sec(id="works")
+    .container
+
+        // start title
+        include ../components/global/title
+        // end title
+
+        // start works_content
+        .works_content
+            .items
+                
+                // start tabs
+                .tabs
+                    ul.list-unstyled.d-flex.justify-content-center.flex-column.flex-sm-row.m-0.p-0
+                        li(data-filter="all").active all
+                        li(data-filter=".recent") recent
+                        li(data-filter=".one_page") one page
+                        li(data-filter=".multi_page") multi page
+                // end tabs
+
+                // start items_wrap
+                .items_wrap
+                    // start item one
+                    each work in works
+                        .item(class=work.w_class)
+                            .img
+                                img.img-fluid(src=work.w_img, alt="one page")
+                            .item_desc
+                                .text=work.w_title
+                                a(href=work.w_link, target="_blank") visit now
+                    // end item
+                // end items_wrap
+
+        // end works_content

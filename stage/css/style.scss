@@ -1,0 +1,27 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i|Sriracha&display=swap');
+
+// vars
+@import "scss/var/colors";
+@import "scss/var/g_var";
+
+// helpers
+@import "scss/helpers/mixins";
+@import "scss/helpers/global";
+
+// layout
+@import "scss/layout/header";
+
+// components
+@import "scss/components/global_title";
+@import "scss/components/global_btn";
+@import "scss/components/shape";
+@import "scss/components/our_social";
+
+// pages
+@import "scss/pages/main_info";
+@import "scss/pages/about";
+@import "scss/pages/services";
+@import "scss/pages/skills";
+@import "scss/pages/works";
+@import "scss/pages/contact";

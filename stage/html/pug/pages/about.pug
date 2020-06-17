@@ -1,0 +1,36 @@
+- var sec_title = "about me";
+
+section.about.padding_sec.position-relative(id="about")
+    .container-fluid
+
+        // title
+        include ../components/global/title
+
+        // start about_content
+        block about_content
+            .about_content
+                .row
+
+                    // start about_img
+                    .col-md-6.d-flex.d-md-block.justify-content-center
+                        block about_img
+                            .about_img.our_shape
+                                img(src="imgs/about_img.png", alt="about img", class="img-fluid")
+                    // emd about_img
+
+                    // start about_info
+                    .col-md-6.d-flex.align-items-center
+                        block about_info
+                            .about_info
+                                .about_infor_inner.text-center.text-md-left
+                                    h4.my_name mahmoud hussien
+                                    .small_desc
+                                        p.global_p i'am front end developer, i have a good knowledge.i am a graduate of a health technician institute.i'am i love this field and i see that this field suitable for me. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi
+                                        include ../components/global/social
+                                    button.download_btn 
+                                        span.effect get cv
+
+
+                    // end about_info
+
+        // end about_content

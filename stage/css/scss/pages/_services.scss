@@ -1,0 +1,161 @@
+.services {
+
+    // start services_content
+    .services_content {
+        // start services_content_inner
+        .services_content_inner {
+
+            // start single_service
+            .single_service {
+                position: relative;
+                background-color: rgba($white, .04);
+                @include transition(.5s);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 0;
+                    background-color: rgba($white, .04);
+                    @include transition(.5s);
+                    transition-delay: .1s;
+                }
+                .card {
+                    padding: $medium_distance;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    
+                    // effect
+                    .effect {
+                        display: block;
+                        @include transition(.5s);
+                        &:first-of-type {
+                            width: 2px;
+                            height: 0;
+                            bottom: 0;
+                            left: 0;
+                            background-image: linear-gradient(to top, $blue, $subblue);
+                        }
+                        &:nth-of-type(2) {
+                            width: 0;
+                            height: 2px;
+                            top: 0;
+                            left: 0;
+                            background-image: linear-gradient(to right, $subblue, $blue);
+                            transition-delay: 1.5s;
+                        }
+                        &:nth-of-type(3) {
+                            height: 0;
+                            width: 2px;
+                            top: 0;
+                            right: 0;
+                            background-image: linear-gradient(to bottom, $blue, $subblue);
+                            transition-delay: 1s;
+                        }
+                        &:nth-of-type(4) {
+                            width: 0;
+                            height: 2px;
+                            bottom: 0;
+                            right: 0;
+                            background-image: linear-gradient(to left, $subblue, $blue);
+                            transition-delay: .5s;
+                        }
+                    }
+                    // end effect
+
+                    // start card-header
+                    $dim: 70px;
+                    .card-header {
+                        background-color: transparent;
+                        display: flex;
+                        justify-content: center;
+                        height: $dim / 2;
+                        margin-bottom: $medium_distance;
+                        .icon {
+                            position: absolute;
+                            width: $dim;
+                            height: $dim;
+                            top: 0;
+                            transform: translateY(-50%);
+                            line-height: $dim;
+                            text-align: center;
+                            color: $white;
+                            background-color: $blue;
+                            font-size: $medium_font;
+                            border-radius: 34% 66% 40% 60% / 61% 56% 44% 39%;
+                            @include transition(.5s);
+                            i {
+
+                            }
+                        }
+                    }
+                    // end card-header
+
+                    // start card-body
+                    .card-body {
+                        .card-title {
+                            margin-bottom: 0;
+                            color: $blue;
+                            text-transform: capitalize;
+                            font-family: $head_font;
+                            @include transition(.5s);
+                        }
+                        .card-text {
+                            
+                        }
+                    }
+                    // end card-body
+
+                }
+
+                &.active, &:hover {
+                    background-color: transparent;
+                    box-shadow: 0 0 15px rgba($subblue, .4);
+                    &::before {
+                        height: 100%;
+                    }
+                    .card-header {
+                        .icon {
+                            background-color: $subblue;
+                            color: $white;
+                        }
+                    }
+                    .card-body {
+                        .card-title {
+                            color: $subblue;
+                        }
+                    }
+                    .effect {
+                        &:first-of-type {
+                            height: 100%;
+                        }
+                        &:nth-of-type(2) {
+                            width: 100%;
+                            transition-delay: .5s;
+                        }
+                        &:nth-of-type(3) {
+                            height: 100%;
+                            transition-delay: 1s;
+
+                        }
+                        &:nth-of-type(4) {
+                            width: 100%;
+                            transition-delay: 1.5s;
+                        }
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    margin-bottom: $large_distance
+                }
+
+            }
+            // end single_service
+
+        }
+        // end services_content_inner
+    }
+    // end services_content
+
+}

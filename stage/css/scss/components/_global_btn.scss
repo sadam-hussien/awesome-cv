@@ -1,0 +1,58 @@
+$btn_width: 150px;
+$btn_height: 45px;
+
+@mixin btn {
+    width: $btn_width;
+    height: $btn_height;    
+    padding: 0;
+    font-weight: bold;
+    font-size: $medium_font;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+    @include transition(.5s);
+    color: $white;
+
+}
+// start hire_btn 
+.hire_btn {
+    border: 1px solid $subblue;
+    background: transparent;
+    margin-right: $medium_distance;
+    @include btn();
+    &:hover {
+        background: $subblue;
+        color: $white;
+    }
+}
+// end hire_btn
+
+// start download_btn
+.download_btn {
+    border: none;
+    background: $subblue;
+    overflow: hidden;
+    @include btn();
+    .effect {
+        position: relative;
+    }
+    &::before {
+        --size: 0;
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        background: radial-gradient(circle closest-side, $blue, transparent);
+        transform: translate(-50%, -50%);
+        transition: width 0.2s ease, height 0.2s ease;
+    }
+    &:hover {
+        background: transparent;
+        &::before {
+            --size: 150px;
+        }
+    }
+}
+// end download_btn

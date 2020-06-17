@@ -1,0 +1,141 @@
+.works {
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     width: 40%;
+    //     background: rgba($white, .04);
+    // }
+
+    // start works_content
+    .works_content {
+        // start items
+        .items {
+
+            // start tabs
+            .tabs {
+                margin-bottom: $large_distance;
+                ul {
+                    li {
+                        &:not(:last-of-type) {
+                            margin-right: $medium_distance;
+                        }
+                        padding: 5px $medium_distance;
+                        border: 1px solid $blue;
+                        color: $white;
+                        // background: $blue;
+                        border-radius: 15px;
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+                        font-size: $small_font;
+                        @include transition(.5s);
+                        &:hover, &.mixitup-control-active {
+                            background: $blue;
+                            color: $white;
+                        }
+                        @media (max-width: 576px) {
+                            margin-right: 0 !important;
+                            &:not(:last-of-type) {
+                                margin-bottom: $small_distance;
+                            }
+                        }
+                    }
+                }
+            }
+            // end tabs
+
+            // start items_wrap
+            .items_wrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: $medium_distance;
+                @media (max-width: 767px) {
+                    grid-template-columns: 1fr;
+                }
+                // start item
+                .item {
+                    position: relative;
+                    overflow: hidden;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                    }
+                    .img {
+                        img {
+                            width: 100%;
+                            min-height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .item_desc {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba($dark, 1);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        @include transition(.5s);
+                        .text {
+                            color: $subblue;
+                            font-weight: bold;
+                            font-size: $large_font;
+                            margin-bottom: $medium_distance;
+                            transform: translateY(-20px);
+                            opacity: 0;
+                            @include transition(.5s);
+                        }
+                        a {
+                            padding: 5px $medium_distance;
+                            background: transparent;
+                            border: 1px solid $blue;
+                            color: $blue;
+                            border-radius: 15px;
+                            text-transform: capitalize;
+                            letter-spacing: 1px;
+                            cursor: pointer;
+                            font-size: $small_font;
+                            transform: translateY(20px);
+                            opacity: 0;
+                            @include transition(.5s);
+                            &:hover {
+                                background: $blue;
+                                color: $white;
+                            }
+                        }
+                    }
+                    
+                    &:hover {
+                        .item_desc {
+                            opacity: 1;
+                            .text {
+                                transition-delay: .4s;
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                            a {
+                                transition: transform .5s .6s, opacity .5s .6s, background .5s 0s, color .5s 0s;
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                }
+                // end item
+            }
+            // end items_wrap
+
+        }
+        // emnd items
+    }
+    // end works_content
+
+}

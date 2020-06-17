@@ -1,0 +1,96 @@
+- var sec_title = "skills";
+
+- var main_skills = [{"skill_precent": "85", "skill_title": "html"},{"skill_precent": "90", "skill_title": "css"},{"skill_precent": "70", "skill_title": "javascript"}] 
+
+- var frameworks_skills = [{"skill_precent": "80", "skill_title": "bootstrap"},{"skill_precent": "65", "skill_title": "vuejs"},{"skill_precent": "75", "skill_title": "jquery"}] 
+
+- var other_skills = [{"skill_precent": "60", "skill_title": "git & github"},{"skill_precent": "75", "skill_title": "gulpjs"},{"skill_precent": "80", "skill_title": "sass"},{"skill_precent": "75", "skill_title": "pug"}] 
+
+section.skills.position-relative.padding_sec(id="skills")
+
+    // shows
+    img.show1.position-absolute(src="imgs/show.svg", alt="show")
+
+    .container
+
+        // start title
+        include ../components/global/title
+        // end title
+
+        // start skills_content
+        .skills_content
+
+            // start main_skills
+            .main_skills.skills_box
+
+                // skills_defination
+                .row
+                    .col
+                        .skills_defination
+                            h4.text main skills
+
+                // single_skill
+                .row
+                    // start single_skill
+                    each skill in main_skills
+                        .col-sm-6.col-lg-4.d-flex.justify-content-center
+                            .single_skill
+                                .single_skill_inner.text-center
+                                    .prog
+                                        div(class="chart", data-percent=skill.skill_precent)
+                                            span #{skill.skill_precent}%
+                                    .skill_title
+                                        span=skill.skill_title 
+                    // end single_skill
+            // end main_skills
+
+            // start frameworks_skills            
+            .frameworks_skills.skills_box
+
+                // skills_defination
+                .row
+                    .col
+                        .skills_defination
+                            h4.text frameworks
+
+                // single_skill
+                .row
+                    // start single_skill
+                    each skill in frameworks_skills
+                        .col-sm-6.col-lg-4.d-flex.justify-content-center
+                            .single_skill
+                                .single_skill_inner.text-center
+                                    .prog
+                                        div(class="chart", data-percent=skill.skill_precent)
+                                            span #{skill.skill_precent}%
+                                    .skill_title
+                                        span=skill.skill_title 
+                    // end single_skill
+            // end frameworks_skills
+
+            // start other_skills            
+            .other_skills.skills_box
+
+                // skills_defination
+                .row
+                    .col
+                        .skills_defination
+                            h4.text other skills
+
+                // single_skill
+                .row
+                    // start single_skill
+                    each skill in other_skills
+                        .col-sm-6.col-lg-4.d-flex.justify-content-center
+                            .single_skill
+                                .single_skill_inner.text-center
+                                    .prog
+                                        div(class="chart", data-percent=skill.skill_precent)
+                                            span #{skill.skill_precent}%
+                                    .skill_title
+                                        span=skill.skill_title 
+                    // end single_skill
+            // end other_skills
+
+        // end skills_content
+

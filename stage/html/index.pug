@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        // start meta
+        include pug/layout/meta
+        // end meta
+
+    body
+
+        // start header
+        block header
+            include pug/layout/header
+        // end header
+
+        // start profile_content
+        block profile_content
+
+            section.profile_content
+
+                // start main_info
+                block main_info
+                    include pug/pages/main_info
+                // end main_info
+
+                // start about
+                include pug/pages/about
+                // end about
+
+                // start services
+                include pug/pages/services
+                // end services
+
+                // start skills
+                include pug/pages/skills
+                // end skills
+
+                // start works
+                include pug/pages/works
+                // end works
+
+                // start contact
+                include pug/pages/contact
+                // end contact
+
+        /// end profile_content
+
+        // start scripts
+        include pug/layout/scripts
+        // end scripts
