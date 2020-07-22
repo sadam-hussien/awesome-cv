@@ -1,0 +1,108 @@
+{
+    "products": [
+        {
+            "id": "0",
+            "productImg": "https://i.postimg.cc/njGncCG8/pr1.png",
+            "productCategory": "Accessories",
+            "productTitle": "Quartz Belt Watch",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "150.00"
+        },
+        {
+            "id": "1",
+            "productImg": "https://i.postimg.cc/cgSsSQYM/pr2.png",
+            "productCategory": "Beauty",
+            "productTitle": "Women Freshwash",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "150.00"
+        },
+        {
+            "id": "2",
+            "productImg": "https://i.postimg.cc/Sjmy1fmm/pr3.png",
+            "productCategory": "Decor",
+            "productTitle": "Room Flash Light",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "150.00"
+        },
+        {
+            "id": "3",
+            "productImg": "https://i.postimg.cc/YhsM9cYS/pr4.png",
+            "productCategory": "Decor",
+            "productTitle": "Room Flash Light",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "150.00"
+        },
+        {
+            "id": "4",
+            "productImg": "https://i.postimg.cc/q6B4t41N/pr5.png",
+            "productCategory": "Accessories",
+            "productTitle": "Man Office Bag",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "400.00"
+        },
+        {
+            "id": "5",
+            "productImg": "https://i.postimg.cc/YhsM9cYS/pr4.png",
+            "productCategory": "Accessories",
+            "productTitle": "Man Office Bag",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "300.00"
+        },
+        {
+            "id": "6",
+            "productImg": "https://i.postimg.cc/yD3B3fyy/pr8.png",
+            "productCategory": "Accessories",
+            "productTitle": "Man Office Bag",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "200.00"
+        },
+        {
+            "id": "7",
+            "productImg": "https://i.postimg.cc/vcBGb81j/pr7.png",
+            "productCategory": "Accessories",
+            "productTitle": "Man Office Bag",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "110.00"
+        },
+        {
+            "id": "8",
+            "productImg": "https://i.postimg.cc/Yj8t5LSY/pr6.png",
+            "productCategory": "Accessories",
+            "productTitle": "Man Office Bag",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "80.00"
+        },
+        {
+            "id": "9",
+            "productImg": "https://i.postimg.cc/3w3J8nMb/pr10.png",
+            "productCategory": "Accessories",
+            "productTitle": "pink bag woman",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "50.00"
+        },
+        {
+            "id": "10",
+            "productImg": "https://i.postimg.cc/0yYy1h4w/pr11.png",
+            "productCategory": "shoes",
+            "productTitle": "sport shoes",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "500.00"
+        },
+        {
+            "id": "11",
+            "productImg": "https://i.postimg.cc/zGZGMqxN/pr12.png",
+            "productCategory": "shoes",
+            "productTitle": "sport shoes",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "450.00"
+        },
+        {
+            "id": "12",
+            "productImg": "https://i.postimg.cc/vmX8cfb8/pr9.png",
+            "productCategory": "watches",
+            "productTitle": "smart black watch",
+            "productDesc": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
+            "productPrice": "1050.00"
+        } 
+    ]
+}
